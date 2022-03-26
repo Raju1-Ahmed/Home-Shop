@@ -3,13 +3,14 @@ import { faCoffee, faShoppingCart, faDeleteLeft, faRemove, faRemoveFormat,faRand
 import React from 'react';
 import './quantity.css'
 
-const Quantity = ({addCart}) => {
-const {name, img} = addCart;
+const Quantity = ({addCart, RemoveItem}) => {
+const {name, img,} = addCart;
+
     return (
         <div className='quantity-Container'>
             <img src={img} alt="" />
             <h2>{name}</h2>
-            <button>
+            <button onClick={RemoveItem}>
             <FontAwesomeIcon icon={faRemove}></FontAwesomeIcon>
                 
             </button>

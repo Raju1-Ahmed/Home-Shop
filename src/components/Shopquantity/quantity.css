@@ -21,7 +21,9 @@
     border: 2px solid #4caf50b3;
 }
 .quantity-Container button{
-    padding: 12px;
+    border-radius: 3px;
+    padding: 18px;
+    border: none;
     float: right;
     margin-top: 9px;
 }
