@@ -28,11 +28,10 @@ const Shop = () => {
             }
             </div>
             <div className="Card-Container">
+                <h2>Choice Product:</h2>
                 {
-                    addCarts.map((addCart) =>(
-                        // <h4>order summary</h4>
-                        <p>Selected Items: {addCart.name}</p>
-                    ))
+                    addCarts.map((addCart) => 
+                    )
                 }
 
 
