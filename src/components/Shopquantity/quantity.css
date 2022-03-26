@@ -1,0 +1,27 @@
+.quantity-Container h2{
+    margin-top: 21px;
+    font-size: 13px;
+    color: #4caf50b3;
+    float: left;
+    margin-left: 12px;
+}
+.quantity-Container img{
+    width: 50px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+.quantity-Container{
+    border-radius: 7px;
+
+    background: #ddd;
+    margin-bottom: 5px;
+    height: 66px;
+    border: 2px solid #4caf50b3;
+}
+.quantity-Container button{
+    padding: 12px;
+    float: right;
+    margin-top: 9px;
+}

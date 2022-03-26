@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../../Product/Product';
+import Quantity from '../../Shopquantity/Quantity';
 import './Shop.css'
 
 const Shop = () => {
@@ -28,12 +29,15 @@ const Shop = () => {
             }
             </div>
             <div className="Card-Container">
-                <h2>Choice Product:</h2>
+                <h2>Choice</h2>
                 {
-                    addCarts.map((addCart) => 
-                    )
+                    addCarts.map((addCart) => <Quantity 
+                    key={addCart.id}
+                    addCart={addCart}
+                    />)
                 }
-
+                <button className='random'>Rendomly show</button>
+                <button className='random'>remove</button>
 
             </div>
         </div>
