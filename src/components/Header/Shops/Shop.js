@@ -22,8 +22,12 @@ const Shop = () => {
     const RemoveItem= () =>{
         setAddCart([]);
     }
-    const randomadd= (addCart) =>{
-        console.log(addCart);
+    const randomCart = () => {
+        if(addCarts.length > 0) {
+            const randomValue = Math.floor(Math.random() * addCarts.length);
+            const luckyNumber = addCarts[randomValue];
+            setAddCart([luckyNumber])
+        }
     }
     
     return (
@@ -38,7 +42,7 @@ const Shop = () => {
                     RemoveItem={RemoveItem}
                     />)
                 }
-                <button onClick={randomadd} className='random'> Random Add 
+                <button onClick={randomCart} className='random'> Random Add 
             <FontAwesomeIcon icon={faRandom}></FontAwesomeIcon>
 
                 </button>

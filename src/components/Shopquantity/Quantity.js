@@ -10,7 +10,7 @@ const {name, img,} = addCart;
         <div className='quantity-Container'>
             <img src={img} alt="" />
             <h2>{name}</h2>
-            <button onClick={git}>
+            <button onClick={RemoveItem}>
             <FontAwesomeIcon icon={faRemove}></FontAwesomeIcon>
                 
             </button>
