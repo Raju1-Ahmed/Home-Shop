@@ -1,7 +1,6 @@
 .shop-Container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    position: absolute;
 }
 .product-Container{
     display: grid;
@@ -12,7 +11,6 @@
 .Card-Container{
     background: rgba(255, 153, 0, 0.3);
     position: relative;
-    position: fixed;
 
 }
 
