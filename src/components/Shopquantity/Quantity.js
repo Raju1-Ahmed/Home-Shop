@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faShoppingCart, faDeleteLeft, faRemove, faRemoveFormat,faRandom} from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import './quantity.css'
 
@@ -7,7 +9,10 @@ const {name, img} = addCart;
         <div className='quantity-Container'>
             <img src={img} alt="" />
             <h2>{name}</h2>
-            <button>icon</button>
+            <button>
+            <FontAwesomeIcon icon={faRemove}></FontAwesomeIcon>
+                
+            </button>
         </div>
     );
 };

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Product from '../../Product/Product';
 import Quantity from '../../Shopquantity/Quantity';
 import './Shop.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faShoppingCart, faDeleteLeft, faRemove, faRemoveFormat,faRandom,} from '@fortawesome/free-solid-svg-icons'
 
 const Shop = () => {
     const [products, setProduct] = useState([]);
@@ -36,8 +38,14 @@ const Shop = () => {
                     addCart={addCart}
                     />)
                 }
-                <button className='random'>Rendomly show</button>
-                <button className='random'>remove</button>
+                <button className='random'> Random Add 
+            <FontAwesomeIcon icon={faRandom}></FontAwesomeIcon>
+
+                </button>
+
+                <button className='random'>remove 
+                    <FontAwesomeIcon> icon={faRemoveFormat}</FontAwesomeIcon>
+                </button>
 
             </div>
         </div>
